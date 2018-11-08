@@ -1,3 +1,9 @@
+<h1>Hello Component</h1>
 <p>
-  hello works!
+  App Component Data: {{data}}
 </p>
+<br>
+<input
+  #animal
+  type="text"
+> <button (click)="send(animal.value)">App Component'e Gönder</button>

@@ -1,7 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    App Component
   </h1>
-  <app-hello></app-hello>
+  <input
+    type="text"
+    [(ngModel)]="name"
+  >
+  <br>
+  <br>
+  Hello Component Data: {{onUpdatedData}}
+  <br>
+  <app-hello
+    [data]="name"
+    (onUpdate)="onUpdateHello($event)"
+  ></app-hello>
 </div>
